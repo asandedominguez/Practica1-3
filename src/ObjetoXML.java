@@ -7,7 +7,7 @@ public class ObjetoXML {
         ObjetoXML xml = new ObjetoXML();
         try {
             XMLOutputFactory documento = XMLOutputFactory.newInstance();
-            XMLStreamWriter escritura = documento.createXMLStreamWriter(new FileOutputStream("documento.xml"), "UTF-8");
+            XMLStreamWriter escritura = documento.createXMLStreamWriter(new FileOutputStream("autores.xml"), "UTF-8");
 
             escritura.writeStartDocument("1.0");
             escritura.writeStartElement("autores");
@@ -26,7 +26,7 @@ public class ObjetoXML {
             escritura.writeCharacters(" Los miserables ");
             escritura.writeEndElement();
 
-            escritura.writeEndElement(); // Cierra autor a1
+            escritura.writeEndElement();
 
             escritura.writeStartElement("autor");
             escritura.writeAttribute("codigo", "a2");

@@ -34,7 +34,7 @@ public class Producto implements Serializable {
 
         }
         catch (IOException | ClassNotFoundException e) {
-            System.out.println("Error al escribir el fichero" + e.getMessage());
+            System.out.println("Error al leer el fichero" + e.getMessage());
         }
     }
 }

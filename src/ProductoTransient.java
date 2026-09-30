@@ -19,7 +19,7 @@ public class ProductoTransient implements Serializable {
 
             objetos.writeObject(producto);
             objetos.flush();
-            System.out.println("Operación completada con ẃxito \n" + producto.nome + " " + producto.num1 + " " + producto.num2);
+            System.out.println("Operación completada con éxito \n" + producto.nome + " " + producto.num1 + " " + producto.num2);
         }
         catch (IOException e) {
             System.out.println("Error al escribir el fichero" + e.getMessage());
